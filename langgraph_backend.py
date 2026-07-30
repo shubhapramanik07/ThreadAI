@@ -1,15 +1,16 @@
 from langgraph.graph import StateGraph, START, END
 from typing import TypedDict, Annotated
 from langchain_core.messages import BaseMessage
-from langchain.chat_models import init_chat_model
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
+
 from dotenv import load_dotenv
+from langchain.chat_models import init_chat_model
 
 load_dotenv()
 
-llm =  init_chat_model(
-    "google_genai:gemini-3.5-flash",
+llm = init_chat_model(
+    "google_genai:gemini-3.6-flash",
     max_retries=10,  # Increase for unreliable networks (default: 6)
     timeout=120,  # Seconds; increase for slow connections
 )
