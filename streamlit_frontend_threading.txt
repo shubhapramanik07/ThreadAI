@@ -1,0 +1,23 @@
+</>The task we are performing here in this file "streamlit_frontend_threading.py":
+
+     -> add sidebar with title + A start chat button + A little named "My Conversations"
+     -> generate dynamic thread id and add it to the session
+     -> display the thread id in the sidebar
+
+     ****************************************************
+
+     -> add a New Chat button
+     -> on Click of new chat open a new chat window
+         1. generate a new thread id
+         2. save it to the session
+         3. reset message history
+
+     ****************************************************
+
+     -> create a list to store all thread ids in the session
+     -> Load all the thread ids in the sidebar as a list of buttons
+     -> convert the side bar text to clickable buttons
+
+     *****************************************************
+
+     -> on click of a particular thread id load that particular conversation in the main chat window
